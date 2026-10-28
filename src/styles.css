@@ -1,0 +1,15 @@
+.pa-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--spacing-m); margin-bottom: var(--spacing-l); }
+.pa-page .pa-stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.pa-stat__label { font-size: var(--font-size-xs); color: var(--light-body-color); }
+.pa-stat__value { font-size: var(--font-size-xl); font-weight: 700; color: var(--base-body-color); }
+.pa-up { font-size: var(--font-size-xs); color: var(--notice-color); }
+.pa-down { font-size: var(--font-size-xs); color: var(--alert-color); }
+.pa-path { font-family: monospace; font-size: var(--font-size-xs); color: var(--light-body-color); word-break: break-all; margin-bottom: var(--spacing-m); }
+.pa-list { list-style: none; padding: 0; margin: 0 0 var(--spacing-m); }
+.pa-list li { display: flex; justify-content: space-between; gap: var(--spacing-s); padding: 4px 0; border-bottom: 1px solid var(--border-color); font-size: var(--font-size-s); }
+.pa-list li span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pa-muted { color: var(--light-body-color); font-size: var(--font-size-s); }
+.pa-error { color: var(--alert-color); font-size: var(--font-size-s); }
+.pa-snippet { font-family: monospace; font-size: var(--font-size-xs); background: var(--light-bg-color); padding: var(--spacing-m); border-radius: 4px; word-break: break-all; white-space: pre-wrap; }
+.pa-page { padding: var(--spacing-xl); max-width: 900px; }
+.pa-h { font-size: var(--font-size-l); font-weight: 600; margin: var(--spacing-l) 0 var(--spacing-s); }

@@ -1,0 +1,66 @@
+{
+  "name": "datocms-plugin-privatus-analytics",
+  "version": "1.0.0",
+  "description": "See visitors and pageviews for each DatoCMS record, and your whole site, with Privatus Analytics. Cookieless, no cookie pop-up needed.",
+  "homepage": "https://github.com/Privatus-Analytics/datocms-plugin-privatus-analytics#readme",
+  "license": "MIT",
+  "author": "Privatus Analytics <hello@privatusanalytics.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Privatus-Analytics/datocms-plugin-privatus-analytics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Privatus-Analytics/datocms-plugin-privatus-analytics/issues"
+  },
+  "keywords": [
+    "datocms-plugin",
+    "datocms",
+    "analytics",
+    "web-analytics",
+    "privacy",
+    "cookieless",
+    "privatus",
+    "privatus-analytics"
+  ],
+  "type": "module",
+  "files": [
+    "dist",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "datoCmsPlugin": {
+    "title": "Privatus Analytics",
+    "coverImage": "docs/cover.png",
+    "previewImage": "docs/preview.png",
+    "entryPoint": "dist/index.html",
+    "permissions": []
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p . && vite build",
+    "typecheck": "tsc -p .",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "dependencies": {
+    "datocms-plugin-sdk": "2.5.0",
+    "datocms-react-ui": "2.5.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "10.4.1",
+    "@testing-library/react": "16.3.0",
+    "@types/react": "18.3.27",
+    "@types/react-dom": "18.3.7",
+    "@vitejs/plugin-react": "5.1.4",
+    "happy-dom": "21.0.4",
+    "typescript": "5.9.3",
+    "vite": "7.3.7",
+    "vitest": "4.1.11"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
